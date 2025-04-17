@@ -43,6 +43,9 @@
                 }
             }
 
+            
+                
+           
             // Modal base template
             var modal_template = '   <div class="modal' + (options.animation == true ? ' fade' : '') + '" tabindex="-1" role="dialog" id="' + id + '">  ' +
                 '     <div class="modal-dialog ' + options.size + (options.center ? ' modal-dialog-centered' : '') + '" role="document">  ' +
@@ -51,9 +54,9 @@
                     '         <div class="modal-header">  ' +
                     '           <h5 class="modal-title">' + options.title + '</h5>  ' +
                     ((options.closeButton == true) ?
-                        '           <button type="button" class="close" data-dismiss="modal" aria-label="Close">  ' +
-                        '             <span aria-hidden="true">&times;</span>  ' +
-                        '           </button>  '
+                        '           <a class="close" style="cursor: pointer;" data-dismiss="modal">  ' +
+                        '             <span>&times;</span>  ' +
+                        '            </a> '
                         : '') +
                     '         </div>  '
                     : '') +
